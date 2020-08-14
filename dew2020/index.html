@@ -1,95 +1,385 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>	
-<title> Data Excellence Workshop </title>
+<head>
 
-<body bgcolor="ffffff" style = "font-family:arial;font-size:14px;font-style:normal;">
-  
-<h1>1st Data Excellence Workshop (DEW2020)</h1>
-<p>at <a href=https://www.humancomputation.com/> The eight AAAI Conference on Human Computation and Crowdsourcing </a></p>
-<p><b>Date:</b> 26 October 2020 </p>
-<p><b>Location:</b> Virtual</p>
-<p><b> <a href=http://eval.how/dew-2020> Workshop Website</a></b></p>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<h2> <a href=http://eval.how/dew-2020/program.html> Program </a></h2>
-<h2> <a href=http://eval.how/dew-2020/keynotes.html> Keynotes </a></h2>
-<h2> <a href="https://easychair.org/conferences/?conf=dew2020"> Submission Link </a></h2>
+    <title>DEW 2020 - 1st Data Excellence Workshop</title>
 
-<h2> Important Dates </h2>
-<p><b> Submission Deadline: September 5, 2020 </b></p>
-<p><b> Notification of acceptance: September 25, 2020 </b></p>
-<p><b> Final camera-ready papers due: October 12, 2020 </b></p>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-<p> Human annotated data is crucial for operationalizing empirical ways for evaluating, comparing, and assessing the progress of ML/AI research. As human annotated data represents the compass that the entire ML/AI community relies on, the human computation (HCOMP) research community has a multiplicative effect on the progress of the field. Optimizing the cost, size, and speed of collecting data has attracted significant attention by HCOMP and related research communities. In the first to market rush with data, aspects of maintainability, reliability, validity, and fidelity of datasets are often overlooked. We want to turn this way of thinking on its head and highlight examples, case-studies, methodologies for excellence in data collection. </p>
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-<p>Panos Ipeirotis, one of the founders of the HCOMP research community, warned us that crowdsourced data collection platforms had the structural properties [Ipeirotis, 2010] of a market for lemons [Akerlof, 1967]. Due to uncertainty in the notion of quality, the market focuses on price, resulting in an equilibrium state where the good sellers are priced out of the market and only lemons remain. The focus on scale, speed, and cost of building datasets has resulted in an impact on quality, which is nebulous and often circularly defined, since the annotators are the source of data and ground truth [Riezler, 2014]. While dataset quality is still the top concern everyone has, but the ways in which that is measured in practice is poorly understood and sometimes simply wrong. A decade later, we see some cause for concern: fairness and bias issues in labeled datasets [Goel and Faltings, 2019], quality issues in datasets [Crawford and Paglen, 2019], limitations of benchmarks [Kovaleva et al., 2019, Welty et al., 2019] reproducibility concerns in machine learning research [Pineau et al., 2018, Gunderson and Kjensmo, 2018], lack of documentation and replication of data [Katsuno et al., 2019].</p>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
-<p>Excellence in data is not required by the existing incentive structures. As the above body of work shows, we are being hindered by lack of it, and we might have a novel opportunity to advance the field by prioritizing it. Data excellence happens organically due to appropriate support, expertise, diligence, commitment, pride, community, etc. We will invite speakers and submissions exploring such case studies in data excellence, focusing on empirical and theoretical methodologies for reliability, validity, maintainability, and fidelity of data. This will have the immediate utility of showcasing best practices in data excellence, in the medium term, improving the state-of-art performance by better data, and in the long run, enable the next set of breakthroughs in AI powered by data. Data Excellence is more than maintaining a minimum standard for the ways in which we collect, publish or assess our data. It’s a metascientific enterprise of recognizing what’s important in the long term for Science.</p>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
-<h2> Topics of Interest </h2>
-We invite scientific contributions and positions papers on the following topics: 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-<p><b>Maintainability</b>: Maintaining data at scale, e.g., Knowledge Graph [Bollacker et al, 2008] has similar challenges to maintaining software at scale, or potentially knowledge engineering. What lessons for maintaining data at scale could we learn or adapt from software and knowledge engineering at scale? Data engineering often refers to data munging tasks, and is far more important and challenging that has been appreciated thus far. The fastest thing to do isn’t the most maintainable or reusable. By analogy, data should be well documented [Gebru, 2018], have clear owners/maintainers, should not fork or replicate existing data without documented rationale, should follow shared best practices. 
-<ul>
-  <li>Data should be not abandoned, should not be disposable</li>
-  <li>What if it is a one-off dataset?</li>
-    <ul>      
-      <li>There is no good software that is abandoned.</li> 
-      <li>Even one off dataset require maintenance over time, it needs extension to other languages, addition of new word pairs, updates, scrutiny</li>
-      <li>How do we help other people to contribute to growing and improving this data</li>
-    </ul>      
-  <li>Open infrastructure for supporting maintenance and growth</li>
-</ul>
-</p>
+</head>
 
-<p><b>Reliability:</b> Reliability captures internal aspects of validity of the data, such as: consistency, replicability, reproducibility of data. Irreproducible data allows us to draw whatever conclusions we want to draw, while giving us the facade of being data-driven, when it is dangerously hunch driven. So surely we want data to be reproducible [Paritosh, 2012]. 
-<ul>
-  <li>Irreproducible data is not maintainable</li>
-  <li>Reliable mechanisms to account for the human aspects of data collection</li>
-  <li>Gathering data from humans requires acknowledging our humanity: frailty, subjectiveness, imperfections, knowledge gaps, etc.</li>
-</ul>
-</p>
 
-<p><b>Validity:</b> Validity tells us about how well the data helps us explain things related to the phenomena captured by the data, e.g., via correlation between the data and external measures. Education research tries to explore whether grades are valid by studying its correlations to external indicators of student outcome. One thing is clear: you cannot validate the data by itself!
-<ul>
-  <li>Does the specific operationalization of a data collection procedure (e.g., answering a certain question on a 5-point Likert scale) accurately represent and allow generalizations to the abstract construct that is being modeled (e.g., human sentiment reactions to sentences)?</li>
-  <li>Was the construct properly defined before it was operationalized (e.g., getting convicted in court does not equal having committed the crime, but rather the jury's assessment that one committed the crime)?</li>
-  <li>Does the data operationalization account for potential complexity, subjectivity, multi-valence or ambiguity of the intended construct?</li>
-  <li>Does the data operationalization predict features of the represented construct (e.g., education research tries to explore whether grades are valid by studying its correlations to external indicators of success)?</li>
-</ul>
-</p>
+<body id="page-top">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">DEW 2020</a>
+        </div>
 
-<p><b>Fidelity:</b> The dataset often represents a phenomenon, e.g., a corpus of sentences and their judged sentiments represents the phenomenon of human sentiment reaction to sentences. A classifier trained on this data will then produce a score which can be used by a product to determine whether to promote or demote a news story on its feed. The users of data often assume that the dataset accurately and comprehensively represents the phenomenon, which is almost never the case. For example, if the sentences in the sentiment corpus were sampled from Wikipedia, it might not work as well as news headlines required by the product. 
-<ul>
-  <li>Balanced corpus</li>
-  <li>Sampling, e.g:</li>
-  <ul>
-    <li>Temporal splitting can introduce bias if not done right in cases such as signal processing or sequential learning.</li>
-    <li>User based splitting not keeping data of users separated is a potential bias source. E.g. if data from the same user is in test and train sets.</li>
-  </ul>
-  <li>Not a property of a single dataset but a set of them?</li>
-  <li>Effort towards fidelity</li>
-  <li>Grounding in prior research, science behind the data?</li>
-  <li>How good of science can the dataset support?</li>
-  <li>Correlation between the data and external measures</li>
-  <li>Education research tries to explore whether grades are valid by studying its correlations to external indicators of success?</li>
-  <li>Wordnet reaction time study</li>
-  <li>You cannot validate the data by itself</li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#dates">Important Dates</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#keynotes">Keynotes</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#call-for-papers">Call for Papers</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#topics">Topics of Interest</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#program-committee">Program Committee</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#organizing-committee">Organizing Committee</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#program">Program</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 
-<h2> Program Committee </h2>
-TBD
-</ul>
+  <header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>1st Data Excellence Workshop (DEW 2020)</h1>
+            <hr>
+            <p>
+            	<a href="https://www.humancomputation.com" target="_blank">At the 8th AAAI Conference on Human Computation and Crowdsourcing</a><br><br>
+            	<b>Date:</b> 26 October 2020<br>
+				<b>Location:</b> Virtual
+			</p>
+            <a href="#dates" class="btn btn-primary btn-xl page-scroll">Important Dates</a>
+        </div>
+    </div>
+</header>
 
-<h2> Organizing Committee </h2>
-<ul>
-<li>Praveen Paritosh, Google</li>
-<li>Matt Lease, Amazon and UT Austin</li>
-<li>Mike Schaekermann, University of Waterloo</li>
-<li>Lora Aroyo, Google</li>
+  <section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <p>
+                    <p> <b>Human annotated data is crucial for operationalizing empirical ways for evaluating, comparing, and assessing the progress of ML/AI research.</b> As human annotated data represents the compass that the entire ML/AI community relies on, the human computation (HCOMP) research community has a multiplicative effect on the progress of the field. Optimizing the cost, size, and speed of collecting data has attracted significant attention by HCOMP and related research communities. In the first to market rush with data, aspects of maintainability, reliability, validity, and fidelity of datasets are often overlooked. We want to turn this way of thinking on its head and highlight examples, case-studies, methodologies for excellence in data collection.</p>
 
-</ul>
-Email: data_excellence AT googlegroups.com
+                    <p>Panos Ipeirotis [Ipeirotis, 2010], one of the founders of the HCOMP research community, warned us that <b>crowdsourced data collection platforms had the structural properties of a market for lemons</b> [Akerlof, 1967]. Due to uncertainty in the notion of quality, the market focuses on price, resulting in an equilibrium state where the good sellers are priced out of the market and only lemons remain. The focus on scale, speed, and cost of building datasets has resulted in an impact on quality, which is nebulous and often circularly defined, since the annotators are the source of data and ground truth [Riezler, 2014]. While dataset quality is still the top concern everyone has, the ways in which that is measured in practice is poorly understood and sometimes simply wrong. A decade later, we see some cause for concern: fairness and bias issues in labeled datasets [Goel and Faltings, 2019], quality issues in datasets [Crawford and Paglen, 2019], limitations of benchmarks [Kovaleva et al., 2019, Welty et al., 2019] reproducibility concerns in machine learning research [Pineau et al., 2018, Gunderson and Kjensmo, 2018], lack of documentation and replication of data [Katsuno et al., 2019].</p>
+
+                    <p>Currently, data excellence happens organically due to appropriate support, expertise, diligence, commitment, pride, community, etc. However, data excellence is more than maintaining a minimum standard for the ways in which we collect, publish or assess our data. It’s a metascientific enterprise of recognizing what’s important in the long term for science.</p>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <section id="dates">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Important Dates</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-upload wow bounceIn text-primary"></i>
+                    <h3>Submission Deadline</h3>
+                    <p class="text-muted">September 21, 2020</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-envelope wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <h3>Notification of acceptance</h3>
+                    <p class="text-muted">October 12, 2020</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-camera-retro wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>Final camera-ready papers due</h3>
+                    <p class="text-muted">October 19, 2020</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-users wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <h3>Workshop</h3>
+                    <p class="text-muted">October 26, 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="no-padding" id="keynotes">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <img src="img/keynotes/keynote_tbd.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Invited Speaker
+                            </div>
+                            <div class="project-name">
+                                TBD
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <img src="img/keynotes/keynote_tbd.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Invited Speaker
+                            </div>
+                            <div class="project-name">
+                                TBD
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <img src="img/keynotes/keynote_tbd.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Invited Speaker
+                            </div>
+                            <div class="project-name">
+                                TBD
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="bg-primary" id="call-for-papers">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-heading text-center">Call for Papers</h2>
+                <hr class="light">
+                <p class="text-faded">
+                    Decades of catastrophic failures within high-stakes software projects (e.g., explosions of billion dollar spacecrafts in the 60s and 90s due to floating point overflows and missing hyphens in source code) have burnt the vital importance of upfront investments in <span style="color: white; font-weight: bold">software engineering excellence</span> into our collective memory. It was through careful post-hoc analysis of these kinds of disasters that software engineering has matured as a field and achieved a more robust understanding of the costs and benefits that come with: <span style="color: white; font-weight: bold">processes</span> like systematic code reviews, <span style="color: white; font-weight: bold">standards</span> like coding conventions and design patterns, <span style="color: white; font-weight: bold">infrastructure</span> for debugging and experimentation, as well as <span style="color: white; font-weight: bold">incentive structures</span> that prioritize careful quality control over hasty roll-outs.
+                </p>
+                <p class="text-faded">
+                    With the rise of artificial intelligence <span style="color: white; font-weight: bold">human-labeled data</span> has increasingly become the fuel and compass of AI-based software systems. However, an analogous framework for <span style="color: white; font-weight: bold">excellence in data engineering</span> does not yet exist, bearing the risk of similarly disastrous catastrophes to arise from the use of insufficient datasets in AI-based software systems.
+                </p>
+                <p>
+                    <b>
+                    This workshop aims to leverage lessons learned from decades of excellence in software engineering to inspire and enable an analogous framework for data excellence in AI systems.
+                    </b>
+                </p>
+                <p class="text-faded">
+                    <span style="color: white">The outcomes of this workshop will be:</span>
+                    <ul>
+                        <li>defining properties and metrics of data excellence</li>
+                        <li>gathering and reviewing various case studies of data excellence and data catastrophes</li>
+                        <li>building a catalog of best practices and incentive structures for data excellence</li>
+                        <li>discussing the cost-benefit trade-off for investments in data excellence</li>
+                        <li>gathering and reviewing empirical and theoretical methodologies for reliability, validity, maintainability, fidelity of data</li>
+                    </ul>
+                </p>
+                <p class="text-faded">
+                    We welcome <span style="color: white; font-weight: bold">short papers (2 pages)</span> and <span style="color: white; font-weight: bold">long papers (4 pages)</span> addressing one or more of the topics of interest below. Papers will be peer-reviewed by the program committee and accepted papers will be presented as lightning talks during the workshop.
+                </p>
+                <p class="text-center">
+                    <br>
+                    <a href="https://easychair.org/conferences/?conf=dew2020" target="_blank" class="btn btn-default btn-xl">Submission Link</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="topics">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-heading text-center">Topics of Interest</h2>
+                <hr class="primary">
+                <p>
+                    We invite scientific contributions and positions papers on the following topics:
+
+                    <p><b>Maintainability</b>: Maintaining data at scale, e.g., Knowledge Graph [Bollacker et al, 2008] has similar challenges to maintaining software at scale, or potentially knowledge engineering. Data engineering often refers to data munging tasks, and is far more important and challenging that has been appreciated thus far. The fastest thing to do isn’t the most maintainable or reusable:
+                    <ul>
+                      <li>What lessons for maintaining data at scale could we learn or adapt from software and knowledge engineering at scale?</li>
+                      <li>Methods and tools for data documentation (e.g., [Gebru, 2018]), management of owners/maintainers, forking/replication</li>
+                      <li>Data should be not abandoned, should not be disposable</li>
+                      <li>What if it is a one-off dataset?</li>
+                        <ul>      
+                          <li>There is no good software that is abandoned.</li> 
+                          <li>Even a one-off dataset requires maintenance over time, extension to other languages, addition of new word pairs, updates, scrutiny.</li>
+                          <li>How do we help other people to contribute to growing and improving this data</li>
+                        </ul>      
+                      <li>Open infrastructure for supporting maintenance and growth</li>
+                    </ul>
+                    </p>
+
+                    <p><b>Reliability:</b> Reliability captures internal aspects of validity of the data, such as: consistency, replicability, reproducibility of data. Irreproducible data allows us to draw whatever conclusions we want to draw, while giving us the facade of being data-driven, when it is dangerously hunch driven:
+                    <ul>
+                      <li>Irreproducible data is not maintainable</li>
+                      <li>Reliable mechanisms to account for the human aspects of data collection</li>
+                      <li>Gathering data from humans requires acknowledging our humanity: frailty, subjectiveness, imperfections, knowledge gaps, etc.</li>
+                    </ul>
+                    </p>
+
+                    <p><b>Validity:</b> Validity tells us about how well the data helps us explain things related to the phenomena captured by the data, e.g., via correlation between the data and external measures:
+                    <ul>
+                      <li>Does the specific operationalization of a data collection procedure (e.g., answering a certain question on a 5-point Likert scale) accurately represent and allow generalizations to the abstract construct that is being modeled (e.g., human sentiment reactions to sentences)?</li>
+                      <li>Was the construct properly defined before it was operationalized (e.g., getting convicted of a crime is not necessarily equivalent to having committed the crime)?</li>
+                      <li>Does the data operationalization account for potential complexity, subjectivity, multi-valence or ambiguity of the intended construct?</li>
+                      <li>Does the data operationalization predict features of the represented construct (e.g., education research tries to explore whether grades are valid by studying its correlations to external indicators of success)?</li>
+                    </ul>
+                    </p>
+
+                    <p><b>Fidelity:</b> Users of data often assume that the dataset accurately and comprehensively represents the phenomenon, which is almost never the case. For example, if the sentences in a sentiment corpus were sampled from Wikipedia, it might not work as well as news headlines required by the product: 
+                    <ul>
+                      <li>Importance of a balanced / unbiased / representative dataset</li>
+                      <li>Sampling, e.g:</li>
+                      <ul>
+                        <li>Temporal splitting can introduce bias if not done right in cases such as signal processing or sequential learning.</li>
+                        <li>User based splitting not keeping data of users separated is a potential bias source. E.g. if data from the same user is in test and train sets.</li>
+                      </ul>
+                      <li>Does the dataset live up to scientific standards of data collection?</li>
+                      <li>Correlation between the data and external measures or objective outcomes</li>
+                      <li>Problem of circular data validation (i.e., validating data by itself)</li>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="bg-primary" id="program-committee">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Program Committee</h2>
+                <hr class="light">
+                <p class="text-faded">TBD</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="organizing-committee">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Organizing Committee</h2>
+                <hr class="light">
+                <p>
+                    Praveen Paritosh, Google<br>
+                    Matt Lease, Amazon and UT Austin<br>
+                    Mike Schaekermann, Amazon and University of Waterloo<br>
+                    Lora Aroyo, Google<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="program">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Program</h2>
+                <hr class="primary">
+                <p>TBD</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Contact</h2>
+                <hr class="primary">
+            </div>
+        </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <a href="mailto:data_excellence@googlegroups.com">
+                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>data_excellence@googlegroups.com</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/wow.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/creative.js"></script>
+
 </body>
-</html>
-© 2020 GitHub, Inc.
 
+</html>
