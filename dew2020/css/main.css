@@ -306,3 +306,10 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #222; }
+
+.table thead {
+  background: #fff;
+  color: #F05F40; }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f56e51; }
