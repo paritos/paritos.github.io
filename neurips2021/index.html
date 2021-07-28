@@ -1,1 +1,106 @@
-test
+<!DOCTYPE html>
+
+<html>	
+<title> Data Centric AI Workshop </title>
+
+<body bgcolor="ffffff" style = "font-family:arial;font-size:14px;font-style:normal;">
+  
+<h1>1st Data Centric AI Workshop (DCAI2020)</h1>
+<p>at <a href=https://nips.cc/Conferences/2021/> Thirty-fifth Conference on Neural Information Processing Systems </a></p>
+<p><b>Date:</b> 6-14 December 2021 </p>
+<p><b>Location:</b> Virtual</p>
+<p><b> <a href=http://eval.how/neurips2021/index.html> Workshop Website</a></b></p>
+
+<h2> <a href=http://eval.how/dew-2020/program.html> Program </a></h2>
+<h2> <a href=http://eval.how/dew-2020/keynotes.html> Keynotes </a></h2>
+<h2> <a href="https://easychair.org/conferences/?conf=dew2020"> Submission Link </a></h2>
+
+<h2> Important Dates </h2>
+<p><b> Submission Deadline: September 5, 2020 </b></p>
+<p><b> Notification of acceptance: September 25, 2020 </b></p>
+<p><b> Final camera-ready papers due: October 12, 2020 </b></p>
+
+<p> Human annotated data is crucial for operationalizing empirical ways for evaluating, comparing, and assessing the progress of ML/AI research. As human annotated data represents the compass that the entire ML/AI community relies on, the human computation (HCOMP) research community has a multiplicative effect on the progress of the field. Optimizing the cost, size, and speed of collecting data has attracted significant attention by HCOMP and related research communities. In the first to market rush with data, aspects of maintainability, reliability, validity, and fidelity of datasets are often overlooked. We want to turn this way of thinking on its head and highlight examples, case-studies, methodologies for excellence in data collection. </p>
+
+<p>Panos Ipeirotis, one of the founders of the HCOMP research community, warned us that crowdsourced data collection platforms had the structural properties [Ipeirotis, 2010] of a market for lemons [Akerlof, 1967]. Due to uncertainty in the notion of quality, the market focuses on price, resulting in an equilibrium state where the good sellers are priced out of the market and only lemons remain. The focus on scale, speed, and cost of building datasets has resulted in an impact on quality, which is nebulous and often circularly defined, since the annotators are the source of data and ground truth [Riezler, 2014]. While dataset quality is still the top concern everyone has, but the ways in which that is measured in practice is poorly understood and sometimes simply wrong. A decade later, we see some cause for concern: fairness and bias issues in labeled datasets [Goel and Faltings, 2019], quality issues in datasets [Crawford and Paglen, 2019], limitations of benchmarks [Kovaleva et al., 2019, Welty et al., 2019] reproducibility concerns in machine learning research [Pineau et al., 2018, Gunderson and Kjensmo, 2018], lack of documentation and replication of data [Katsuno et al., 2019].</p>
+
+<p>Excellence in data is not required by the existing incentive structures. As the above body of work shows, we are being hindered by lack of it, and we might have a novel opportunity to advance the field by prioritizing it. Data excellence happens organically due to appropriate support, expertise, diligence, commitment, pride, community, etc. We will invite speakers and submissions exploring such case studies in data excellence, focusing on empirical and theoretical methodologies for reliability, validity, maintainability, and fidelity of data. This will have the immediate utility of showcasing best practices in data excellence, in the medium term, improving the state-of-art performance by better data, and in the long run, enable the next set of breakthroughs in AI powered by data. Data Excellence is more than maintaining a minimum standard for the ways in which we collect, publish or assess our data. It’s a metascientific enterprise of recognizing what’s important in the long term for Science.</p>
+
+<h2> Topics of Interest </h2>
+We invite scientific contributions and positions papers on the following topics: 
+
+<p><b>Maintainability</b>: Maintaining data at scale, e.g., Knowledge Graph [Bollacker et al, 2008] has similar challenges to maintaining software at scale, or potentially knowledge engineering. What lessons for maintaining data at scale could we learn or adapt from software and knowledge engineering at scale? Data engineering often refers to data munging tasks, and is far more important and challenging that has been appreciated thus far. The fastest thing to do isn’t the most maintainable or reusable. By analogy, data should be well documented [Gebru, 2018], have clear owners/maintainers, should not fork or replicate existing data without documented rationale, should follow shared best practices. 
+<ul>
+  <li>Data should be not abandoned, should not be disposable</li>
+  <li>What if it is a one-off dataset?</li>
+    <ul>      
+      <li>There is no good software that is abandoned.</li> 
+      <li>Even one off dataset require maintenance over time, it needs extension to other languages, addition of new word pairs, updates, scrutiny</li>
+      <li>How do we help other people to contribute to growing and improving this data</li>
+    </ul>      
+  <li>Open infrastructure for supporting maintenance and growth</li>
+</ul>
+</p>
+
+<p><b>Reliability:</b> Reliability captures internal aspects of validity of the data, such as: consistency, replicability, reproducibility of data. Irreproducible data allows us to draw whatever conclusions we want to draw, while giving us the facade of being data-driven, when it is dangerously hunch driven. So surely we want data to be reproducible [Paritosh, 2012]. 
+<ul>
+  <li>Irreproducible data is not maintainable</li>
+  <li>Reliable mechanisms to account for the human aspects of data collection</li>
+  <li>Gathering data from humans requires acknowledging our humanity: frailty, subjectiveness, imperfections, knowledge gaps, etc.</li>
+</ul>
+</p>
+
+<p><b>Validity:</b> Validity tells us about how well the data helps us explain things related to the phenomena captured by the data, e.g., via correlation between the data and external measures. Education research tries to explore whether grades are valid by studying its correlations to external indicators of student outcome. One thing is clear: you cannot validate the data by itself!
+<ul>
+  <li>Does the specific operationalization of a data collection procedure (e.g., answering a certain question on a 5-point Likert scale) accurately represent and allow generalizations to the abstract construct that is being modeled (e.g., human sentiment reactions to sentences)?</li>
+  <li>Was the construct properly defined before it was operationalized (e.g., getting convicted in court does not equal having committed the crime, but rather the jury's assessment that one committed the crime)?</li>
+  <li>Does the data operationalization account for potential complexity, subjectivity, multi-valence or ambiguity of the intended construct?</li>
+  <li>Does the data operationalization predict features of the represented construct (e.g., education research tries to explore whether grades are valid by studying its correlations to external indicators of success)?</li>
+</ul>
+</p>
+
+<p><b>Fidelity:</b> The dataset often represents a phenomenon, e.g., a corpus of sentences and their judged sentiments represents the phenomenon of human sentiment reaction to sentences. A classifier trained on this data will then produce a score which can be used by a product to determine whether to promote or demote a news story on its feed. The users of data often assume that the dataset accurately and comprehensively represents the phenomenon, which is almost never the case. For example, if the sentences in the sentiment corpus were sampled from Wikipedia, it might not work as well as news headlines required by the product. 
+<ul>
+  <li>Balanced corpus</li>
+  <li>Sampling, e.g:</li>
+  <ul>
+    <li>Temporal splitting can introduce bias if not done right in cases such as signal processing or sequential learning.</li>
+    <li>User based splitting not keeping data of users separated is a potential bias source. E.g. if data from the same user is in test and train sets.</li>
+  </ul>
+  <li>Not a property of a single dataset but a set of them?</li>
+  <li>Effort towards fidelity</li>
+  <li>Grounding in prior research, science behind the data?</li>
+  <li>How good of science can the dataset support?</li>
+  <li>Correlation between the data and external measures</li>
+  <li>Education research tries to explore whether grades are valid by studying its correlations to external indicators of success?</li>
+  <li>Wordnet reaction time study</li>
+  <li>You cannot validate the data by itself</li>
+
+<h2> Program Committee </h2>
+TBD
+</ul>
+
+<h2> Organizing Committee </h2>
+<ul>
+<li>Praveen Paritosh, Google</li>
+<li>Matt Lease, Amazon and UT Austin</li>
+<li>Mike Schaekermann, University of Waterloo</li>
+<li>Lora Aroyo, Google</li>
+
+</ul>
+Email: data_excellence AT googlegroups.com
+</body>
+</html>
+© 2020 GitHub, Inc.
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
