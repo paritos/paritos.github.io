@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DEW 2020 - 1st Data Excellence Workshop</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body id="page-top">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">DEW 2020</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#dates">Important Dates</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#call-for-papers">Call for Papers</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#organizers">Organizers</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#program">Program</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#invited-talks">Talks</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>1st Data Excellence Workshop (DEW 2020)</h1>
+            <hr>
+            <p>
+            	<a href="https://www.humancomputation.com" target="_blank"><b>At the 8th AAAI Conference on Human Computation and Crowdsourcing</b></a><br><br>
+                <span style="color: white;">
+            	<b>Date:</b> 26 October 2020<br>
+                <b>Time PT:</b> 6:00am-10:20am<br>
+                <b>Time EST:</b> 9:00am-1:20pm<br>
+                <b>Time CET:</b> 2:00pm-6:20pm<br>
+				<b>Location:</b> Virtual
+                </span>
+			</p>
+            <a href="#dates" class="btn btn-primary btn-xl page-scroll">Important Dates</a>
+            <span style="width: 20px; display: inline-block;"></span>
+            <a href="https://www.humancomputation.com/attend.html#registration" target="_blank" class="btn btn-warning btn-xl">Register</a>
+            <span style="width: 20px; display: inline-block;"></span>
+            <a href="#invited-talks" class="btn btn-success btn-xl page-scroll">Talks</a>
+        </div>
+    </div>
+</header>
+
+  <section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <p>
+                    <p> <b>Human annotated data is crucial for operationalizing empirical ways for evaluating, comparing, and assessing the progress of ML/AI research.</b> As human annotated data represents the compass that the entire ML/AI community relies on, the human computation (HCOMP) research community has a multiplicative effect on the progress of the field. Optimizing the cost, size, and speed of collecting data has attracted significant attention by HCOMP and related research communities. In the first to market rush with data, aspects of maintainability, reliability, validity, and fidelity of datasets are often overlooked. We want to turn this way of thinking on its head and highlight examples, case-studies, methodologies for excellence in data collection.</p>
+
+                    <p>Panos Ipeirotis [Ipeirotis, 2010], one of the founders of the HCOMP research community, warned us that <b>crowdsourced data collection platforms had the structural properties of a market for lemons</b> [Akerlof, 1967]. Due to uncertainty in the notion of quality, the market focuses on price, resulting in an equilibrium state where the good sellers are priced out of the market and only lemons remain. The focus on scale, speed, and cost of building datasets has resulted in an impact on quality, which is nebulous and often circularly defined, since the annotators are the source of data and ground truth [Riezler, 2014]. While dataset quality is still the top concern everyone has, the ways in which that is measured in practice is poorly understood and sometimes simply wrong. A decade later, we see some cause for concern: fairness and bias issues in labeled datasets [Goel and Faltings, 2019], quality issues in datasets [Crawford and Paglen, 2019], limitations of benchmarks [Kovaleva et al., 2019, Welty et al., 2019] reproducibility concerns in machine learning research [Pineau et al., 2018, Gunderson and Kjensmo, 2018], lack of documentation and replication of data [Katsuno et al., 2019].</p>
+
+                    <p>Currently, data excellence happens organically due to appropriate support, expertise, diligence, commitment, pride, community, etc. However, data excellence is more than maintaining a minimum standard for the ways in which we collect, publish or assess our data. It’s a metascientific enterprise of recognizing what’s important in the long term for science.</p>
+
+                    <p>This workshop continues a series of <u><b>preceding workshops on related topics</b></u>:
+                    <ul style="font-size: 150%">
+                        <li><a href="http://eval.how/aaai-2020/" target="_blank">Meta-Eval 2020</a> @ AAAI</li>
+                        <li><a href="http://eval.how/aaai/" target="_blank">REAIS 2019</a> @ HCOMP</li>
+                        <li><a href="https://sadworkshop.wordpress.com/" target="_blank">SAD 2019</a> @ TheWebConf (WWW)</li>
+                        <li><a href="https://sadworkshop.wordpress.com/2018-edition/" target="_blank">SAD 2018</a> @ HCOMP</li>
+                    </ul>
+                    </p>
+
+                    <p>This year, the DEW workshop will run a <u><b>joint program with REAIS 2020 across two days</b></u>:
+                    <ul style="font-size: 150%">
+                        <li>Oct 25, 2020: <a href="http://eval.how/reais-2020/" target="_blank">REAIS 2020</a></li>
+                        <li>Oct 26, 2020: <a href="http://eval.how/dew2020/" target="_blank">DEW 2020</a></li>
+                    </ul>
+                    </p>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <section id="dates">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Important Dates</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-upload wow bounceIn text-primary"></i>
+                    <h3>Submission Deadline</h3>
+                    <p class="text-muted">October 15, 2020</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-envelope wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <h3>Notification of acceptance</h3>
+                    <p class="text-muted">October 20, 2020</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-camera-retro wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>Final camera-ready papers due</h3>
+                    <p class="text-muted">October 24, 2020</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-users wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <h3>Workshop</h3>
+                    <p class="text-muted">
+                        October 26, 2020<br>
+                        PT: 6:00am-10:20am<br>
+                        EST: 9:00am-1:20pm<br>
+                        CET: 2:00pm-6:20pm
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="bg-primary" id="call-for-papers">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-heading text-center">Call for Papers</h2>
+                <hr class="light">
+                <p class="text-faded">
+                    Decades of catastrophic failures within high-stakes software projects (e.g., explosions of billion dollar spacecrafts in the 60s and 90s due to floating point overflows and missing hyphens in source code) have burnt the vital importance of upfront investments in <span style="color: white; font-weight: bold">software engineering excellence</span> into our collective memory. It was through careful post-hoc analysis of these kinds of disasters that software engineering has matured as a field and achieved a more robust understanding of the costs and benefits that come with: <span style="color: white; font-weight: bold">processes</span> like systematic code reviews, <span style="color: white; font-weight: bold">standards</span> like coding conventions and design patterns, <span style="color: white; font-weight: bold">infrastructure</span> for debugging and experimentation, as well as <span style="color: white; font-weight: bold">incentive structures</span> that prioritize careful quality control over hasty roll-outs.
+                </p>
+                <p class="text-faded">
+                    With the rise of artificial intelligence <span style="color: white; font-weight: bold">human-labeled data</span> has increasingly become the fuel and compass of AI-based software systems. However, an analogous framework for <span style="color: white; font-weight: bold">excellence in data engineering</span> does not yet exist, bearing the risk of similarly disastrous catastrophes to arise from the use of insufficient datasets in AI-based software systems.
+                </p>
+                <p>
+                    <b>
+                    This workshop aims to leverage lessons learned from decades of excellence in software engineering to inspire and enable an analogous framework for data excellence in AI systems.
+                    </b>
+                </p>
+                <p class="text-faded">
+                    <span style="color: white">The outcomes of this workshop will be:</span>
+                    <ul>
+                        <li>defining properties and metrics of data excellence</li>
+                        <li>gathering and reviewing various case studies of data excellence and data catastrophes</li>
+                        <li>building a catalog of best practices and incentive structures for data excellence</li>
+                        <li>discussing the cost-benefit trade-off for investments in data excellence</li>
+                        <li>gathering and reviewing empirical and theoretical methodologies for reliability, validity, maintainability, fidelity of data</li>
+                    </ul>
+                </p>
+                <p class="text-faded">
+                    We welcome <span style="color: white; font-weight: bold">short papers (1-2 pages)</span> and <span style="color: white; font-weight: bold">long papers (4 pages)</span> addressing one or more of the topics of interest below. Papers will be peer-reviewed by the program committee and accepted papers will be presented as lightning talks during the workshop.
+                </p>
+                <p class="text-center">
+                    <br>
+                    <a href="https://easychair.org/conferences/?conf=dew2020" target="_blank" class="btn btn-default btn-xl">Submission Link</a>
+                </p>
+                <br>
+                <br>
+                <h3 class="section-heading text-center" id="topics">Topics of Interest</h3>
+                <hr class="primary">
+                <p class="text-faded">
+                    We invite scientific contributions and positions papers on the following topics:
+
+                    <p class="text-faded"><span style="color: white; font-weight: bold">Maintainability</span>: Maintaining data at scale, e.g., Knowledge Graph [Bollacker et al, 2008] has similar challenges to maintaining software at scale, or potentially knowledge engineering. Data engineering often refers to data munging tasks, and is far more important and challenging that has been appreciated thus far. The fastest thing to do isn’t the most maintainable or reusable:
+                    <ul class="text-faded">
+                      <li>What lessons for maintaining data at scale could we learn or adapt from software and knowledge engineering at scale?</li>
+                      <li>Methods and tools for data documentation (e.g., [Gebru, 2018]), management of owners/maintainers, forking/replication</li>
+                      <li>Data should be not abandoned, should not be disposable</li>
+                      <li>What if it is a one-off dataset?</li>
+                        <ul>      
+                          <li>There is no good software that is abandoned.</li> 
+                          <li>Even a one-off dataset requires maintenance over time, extension to other languages, addition of new word pairs, updates, scrutiny.</li>
+                          <li>How do we help other people to contribute to growing and improving this data</li>
+                        </ul>      
+                      <li>Open infrastructure for supporting maintenance and growth</li>
+                    </ul>
+                    </p>
+
+                    <p class="text-faded"><span style="color: white; font-weight: bold">Reliability:</span> Reliability captures internal aspects of validity of the data, such as: consistency, replicability, reproducibility of data. Irreproducible data allows us to draw whatever conclusions we want to draw, while giving us the facade of being data-driven, when it is dangerously hunch driven:
+                    <ul class="text-faded">
+                      <li>Irreproducible data is not maintainable</li>
+                      <li>Reliable mechanisms to account for the human aspects of data collection</li>
+                      <li>Gathering data from humans requires acknowledging our humanity: frailty, subjectiveness, imperfections, knowledge gaps, etc.</li>
+                    </ul>
+                    </p>
+
+                    <p class="text-faded"><span style="color: white; font-weight: bold">Validity:</span> Validity tells us about how well the data helps us explain things related to the phenomena captured by the data, e.g., via correlation between the data and external measures:
+                    <ul class="text-faded">
+                      <li>Does the specific operationalization of a data collection procedure (e.g., answering a certain question on a 5-point Likert scale) accurately represent and allow generalizations to the abstract construct that is being modeled (e.g., human sentiment reactions to sentences)?</li>
+                      <li>Was the construct properly defined before it was operationalized (e.g., getting convicted of a crime is not necessarily equivalent to having committed the crime)?</li>
+                      <li>Does the data operationalization account for potential complexity, subjectivity, multi-valence or ambiguity of the intended construct?</li>
+                      <li>Does the data operationalization predict features of the represented construct (e.g., education research tries to explore whether grades are valid by studying its correlations to external indicators of success)?</li>
+                    </ul>
+                    </p>
+
+                    <p class="text-faded"><span style="color: white; font-weight: bold">Fidelity:</span> Users of data often assume that the dataset accurately and comprehensively represents the phenomenon, which is almost never the case. For example, if the sentences in a sentiment corpus were sampled from Wikipedia, it might not work as well as news headlines required by the product: 
+                    <ul class="text-faded">
+                      <li>Importance of a balanced / unbiased / representative dataset</li>
+                      <li>Sampling, e.g:</li>
+                      <ul>
+                        <li>Temporal splitting can introduce bias if not done right in cases such as signal processing or sequential learning.</li>
+                        <li>User based splitting not keeping data of users separated is a potential bias source. E.g. if data from the same user is in test and train sets.</li>
+                      </ul>
+                      <li>Does the dataset live up to scientific standards of data collection?</li>
+                      <li>Correlation between the data and external measures or objective outcomes</li>
+                      <li>Problem of circular data validation (i.e., validating data by itself)</li>
+                    </ul>
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="organizers">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Organizing Committee</h2>
+                <hr class="light">
+                <p>
+                    Praveen Paritosh, Google<br>
+                    Matt Lease, Amazon and UT Austin<br>
+                    Mike Schaekermann, Amazon and University of Waterloo<br>
+                    Lora Aroyo, Google<br>
+                </p>
+                <br>
+                <br>
+                <h2 class="section-heading">Program Committee</h2>
+                <hr class="light">
+                <p>
+                    Chris Welty, Google Research<br>
+                    Ana Rogers, University of Copenhagen<br>
+                    Omar Alonso, Curai<br>
+                    Markus Krause, Brainworks<br>
+                    Juho Kim, KAIST<br>
+                    Alex Quinn, Purdue University<br>
+                    Owen Rambow, Elemental Cognition<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="bg-primary" style="padding-bottom: 0" id="program">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-heading text-center">Program</h2>
+                <hr class="primary">
+                <p>
+                    <h3 class="text-center">Schedule</h3>
+                    <br>
+                    <table class="table table-striped text-center" style="font-size: 120%">
+                        <thead style="font-weight: bold">
+                            <tr>
+                                <td>PT</td>
+                                <td>EST</td>
+                                <td>CET</td>
+                                <td width="50%">Agenda</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6:00 AM</td>
+                                <td>9:00 AM</td>
+                                <td>2:00 PM</td>
+                                <td>Intro</td>
+                            </tr>
+                            <tr>
+                                <td>6:10 AM</td>
+                                <td>9:10 AM</td>
+                                <td>2:10 PM</td>
+                                <td><b>Invited talk: <a href="#ben-hutchinson" class="page-scroll" style="color: white; text-decoration: underline">Ben Hutchinson</a></b></td>
+                            </tr>
+                            <tr>
+                                <td>6:30 AM</td>
+                                <td>9:30 AM</td>
+                                <td>2:30 PM</td>
+                                <td><b>Invited talk: <a href="#ian-soboroff" class="page-scroll" style="color: white; text-decoration: underline">Ian Soboroff</a></b></td>
+                            </tr>
+                            <tr>
+                                <td>6:50 AM</td>
+                                <td>9:50 AM</td>
+                                <td>2:50 PM</td>
+                                <td><b>Invited talk: <a href="#andrea-olgiati" class="page-scroll" style="color: white; text-decoration: underline">Andrea Olgiati</a></b></td>
+                            </tr>
+                            <tr>
+                                <td>7:10 AM</td>
+                                <td>10:10 AM</td>
+                                <td>3:10 PM</td>
+                                <td>3x Lightning Talks</td>
+                            </tr>
+                            <tr>
+                                <td>7:25 AM</td>
+                                <td>10:25 AM</td>
+                                <td>3:25 PM</td>
+                                <td>Short Break</td>
+                            </tr>
+                            <tr>
+                                <td>7:35 AM</td>
+                                <td>10:35 AM</td>
+                                <td>3:35 PM</td>
+                                <td>Talks Discussion</td>
+                            </tr>
+                            <tr>
+                                <td>8:05 AM</td>
+                                <td>11:05 AM</td>
+                                <td>4:05 PM</td>
+                                <td><b>Invited talk: <a href="#emily-dinan" class="page-scroll" style="color: white; text-decoration: underline">Emily Dinan</a></b></td>
+                            </tr>
+                            <tr>
+                                <td>8:25 AM</td>
+                                <td>11:25 AM</td>
+                                <td>4:25 PM</td>
+                                <td><b>Invited talk: <a href="#aleksander-madry" class="page-scroll" style="color: white; text-decoration: underline">Aleksander Madry</a></b></td>
+                            </tr>
+                            <tr>
+                                <td>8:45 AM</td>
+                                <td>11:45 PM</td>
+                                <td>4:45 PM</td>
+                                <td>Short Break</td>
+                            </tr>
+                            <tr>
+                                <td>8:55 AM</td>
+                                <td>11:55 AM</td>
+                                <td>4:55 PM</td>
+                                <td><b>Invited talk: <a href="#quang-duong" class="page-scroll" style="color: white; text-decoration: underline">Quang Duong</a></b></td>
+                            </tr>
+                            <tr>
+                                <td>9:15 AM</td>
+                                <td>12:15 PM</td>
+                                <td>5:15 PM</td>
+                                <td><b>Invited talk: <a href="#peter-hallinan" class="page-scroll" style="color: white; text-decoration: underline">Peter Hallinan</a></b></td>
+                            </tr>
+                            <tr>
+                                <td>9:35 AM</td>
+                                <td>12:35 PM</td>
+                                <td>5:35 PM</td>
+                                <td>Talks Discussion</td>
+                            </tr>
+                            <tr>
+                                <td>10:05 AM</td>
+                                <td>1:05 PM</td>
+                                <td>6:05 PM</td>
+                                <td>Wrap Up</td>
+                            </tr>
+                            <tr>
+                                <td>10:20 AM</td>
+                                <td>1:20 PM</td>
+                                <td>6:20 PM</td>
+                                <td>End of Workshop</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+                <br>
+                <h3 id="papers" class="text-center">Accepted Papers</h3><br>
+                <ul style="font-size: 120%; color: white">
+                    <li><a href="http://eval.how/dew2020/submissions/DEW2020_paper_1%20(1).pdf" style="color: white" target="_blank"><b>Reducing Annotation Artifacts in Crowdsourcing Datasets for Natural Language Processing</b></a><br><i>Donghoon Han, Juho Kim and Alice Oh</i><br><br></li>
+                    <li><a href="http://eval.how/dew2020/submissions/DEW2020_paper_2%20(1).pdf" style="color: white" target="_blank"><b>Machine Learning Training to Support Diversity of Opinion</b></a><br><i>Johanne Christensen and Benjamin Watson</i><br><br></li>
+	    	    <li><a href="http://eval.how/dew2020/submissions/DEW2020_paper_3%20(1).pdf" style="color: white" target="_blank"><b>Data Desiderata: Reliability and Fidelity in High-stakes AI</b></a><br><i>Shivani Kapania, Nithya Sambasivan, Kristen Olson, Hannah Highfill, Diana Akrong, Praveen Paritosh and Lora Aroyo</i><br><br></li>
+                </ul>
+                <br>
+                <h3 id="invited-talks" class="text-center">Invited Talks</h3><br>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-lg-3 col-sm-4">
+                <a href="#emily-dinan" class="page-scroll portfolio-box">
+                    <img src="img/keynotes/emily_dinan.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Emily Dinan
+                            </div>
+                            <div class="project-category">
+                                Facebook AI
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+                <a href="#ian-soboroff" class="page-scroll portfolio-box">
+                    <img src="img/keynotes/ian_soboroff.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Ian Soboroff
+                            </div>
+                            <div class="project-category">
+                                NIST
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+                <a href="#aleksander-madry" class="page-scroll portfolio-box">
+                    <img src="img/keynotes/aleksander_madry.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Aleksander Mądry
+                            </div>
+                            <div class="project-category">
+                                MIT
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+                <a href="#quang-duong" class="page-scroll portfolio-box">
+                    <img src="img/keynotes/quang_duong.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Quang Duong
+                            </div>
+                            <div class="project-category">
+                                Google Health
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+                <a href="#andrea-olgiati" class="page-scroll portfolio-box">
+                    <img src="img/keynotes/andrea_olgiati.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Andrea Olgiati
+                            </div>
+                            <div class="project-category">
+                                Amazon AI
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+                <a href="#ben-hutchinson" class="page-scroll portfolio-box">
+                    <img src="img/keynotes/ben_hutchinson.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Ben Hutchinson
+                            </div>
+                            <div class="project-category">
+                                Google Research
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+                <a href="#peter-hallinan" class="page-scroll portfolio-box">
+                    <img src="img/keynotes/peter_hallinan.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Peter Hallinan
+                            </div>
+                            <div class="project-category">
+                                Amazon
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div id="aleksander-madry" class="col-lg-5 col-lg-offset-1" style="padding-right: 40px">
+                <img src="img/keynotes/aleksander_madry.jpg" class="img-responsive" style="border-radius: 100%; width: 100%; height: auto; margin: 0 auto" alt="">
+                <br>
+                <h2 class="section-heading text-center"><a href="https://people.csail.mit.edu/madry/" target="_blank">Aleksander Madry (MIT)</a></h2>
+                <hr class="primary">
+                <h3 class="text-center">What Do Our Models Learn?</h3><br>
+                <p>
+                    Large-scale vision benchmarks have driven—and often even defined—progress in machine learning. However, these benchmarks are merely proxies for the real-world tasks we actually care about. How well do our benchmarks capture such tasks?
+                    <br><br>
+                    In this talk, I will discuss the alignment between our benchmark-driven ML paradigm and the real-world uses cases that motivate it. First, we will explore examples of biases in the ImageNet dataset, and how state-of-the-art models exploit them. We will then demonstrate how these biases arise as a result of design choices in the data collection and curation processes.
+                    <br><br>
+                    Throughout, we illustrate how one can leverage relatively standard tools (e.g., crowdsourcing, image processing) to quantify the biases that we observe.
+                    <br><br>
+                    Based on joint works with Logan Engstrom, Andrew Ilyas, Shibani Santurkar, Jacob Steinhardt, Dimitris Tsipras and Kai Xiao.
+                </p>
+                <hr class="primary">
+                <h3 class="text-center">Bio</h3><br>
+                <p>
+                    Aleksander Madry is a Professor of Computer Science in the MIT EECS Department and a Principal Investigator in the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL). He received his PhD from MIT in 2011 and, prior to joining the MIT faculty, he spent some time at Microsoft Research New England and on the faculty of EPFL.
+                    <br><br>
+                    Aleksander's research interests span algorithms, continuous optimization, science of deep learning, and understanding machine learning from a robustness and deployability perspectives. His work has been recognized with a number of awards, including an NSF CAREER Award, an Alfred P. Sloan Research Fellowship, an ACM Doctoral Dissertation Award Honorable Mention, and Presburger Award.
+                </p>
+            </div>
+            <div id="emily-dinan" class="col-lg-5" style="padding-left: 40px">
+                <img src="img/keynotes/emily_dinan.jpg" class="img-responsive" style="border-radius: 100%; width: 100%; height: auto; margin: 0 auto" alt="">
+                <br>
+                <h2 class="section-heading text-center"><a href="https://www.linkedin.com/in/emily-d-4553b9194/" target="_blank">Emily Dinan (Facebook AI)</a></h2>
+                <hr class="primary">
+                <h3 class="text-center">Adversarial Data Collection for Chatbot Safety</h3><br>
+                <p>
+                    Models trained on large unlabeled corpora of human interactions will learn patterns and mimic behaviors therein, which may include offensive or otherwise toxic behavior and unwanted biases. I will discuss several methods for mitigating these issues in neural dialogue models. In particular, I will highlight the use of iterative, adversarial human-and-model-in-the-loop data collection and model training procedures for the purpose of making chatbots robust to adversarial attack from humans. In opposition to static benchmarks, these approaches yield a “moving goalpost” for natural language understanding systems, and recent work shows that models trained on these increasingly complex tasks are more robust to adversarial attack.
+                </p>
+                <hr class="primary">
+                <h3 class="text-center">Bio</h3><br>
+                <p>
+                    Emily is a Research Engineer at Facebook AI Research in New York. She graduated with a Master's degree in Mathematics from the University of Washington. Emily's research interests include conversational AI, natural language processing, and fairness in these fields.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-primary">
+    <div class="container">
+        <div class="row">
+            <div id="ian-soboroff" class="col-lg-5 col-lg-offset-1" style="padding-right: 40px">
+                <img src="img/keynotes/ian_soboroff.jpg" class="img-responsive" style="border-radius: 100%; width: 100%; height: auto; margin: 0 auto" alt="">
+                <br>
+                <h2 class="section-heading text-center"><a href="https://www.nist.gov/people/ian-soboroff" target="_blank" style="color: white">Ian Soboroff (NIST)</a></h2>
+                <hr class="light">
+                <h3 class="text-center">TREC: Building datasets within a community of use</h3><br>
+                <p>
+                    NIST's Text Retrieval Conference (TREC) and TRECVID evaluations of multimedia search are long-running evaluation workshops that develop datasets for search ranking, classification, and other AI tasks, along with appropriate metrics that the research community can use to gauge progress in those tasks.  Since the start of TREC in 1991, NIST has developed a large store of practical experience in collecting, assembling, labeling, and measuring the quality of datasets.  In this brief talk, I will describe the history of TREC relevance assessments, the processes we use to do determine those labels, and research on how to make those processes more robust, reliable, and inexpensive.
+                </p>
+                <hr class="primary">
+                <h3 class="text-center">Bio</h3><br>
+                <p>
+                    Dr. Ian Soboroff is a computer scientist and leader of the Retrieval Group at the National Institute of Standards and Technology (NIST). The Retrieval Group organizes the Text REtrieval Conference (TREC), the Text Analysis Conference (TAC), and the TREC Video Retrieval Evaluation (TRECVID). These are all large, community-based research workshops that drive the state-of-the-art in information retrieval, video search, web search, information extraction, text summarization and other areas of information access. He has co-authored many publications in information retrieval evaluation, test collection building, text filtering, collaborative filtering, and intelligent software agents. His current research interests include building test collections for complex information seeking tasks.
+                </p>
+            </div>
+            <div id="quang-duong" class="col-lg-5" style="padding-left: 40px">
+                <img src="img/keynotes/quang_duong.jpg" class="img-responsive" style="border-radius: 100%; width: 100%; height: auto; margin: 0 auto" alt="">
+                <br>
+                <h2 class="section-heading text-center"><a href="https://www.linkedin.com/in/quang-duong-6667774/" target="_blank" style="color: white">Quang Duong (Google Health)</a></h2>
+                <hr class="light">
+                <h3 class="text-center">Asynchronous adjudication in labeling medical data: lessons, improvements and expansions</h3><br>
+                <p>
+                    Crowdsourcing has enabled the collection, aggregation and refinement of human knowledge and judgment, i.e. ground truth, for problem domains with data of increasing complexity and scale. A lack of comprehensive diagnostic reference standards in medicine significantly increases the complexity of labeling medical data. Asynchronous adjudication, a newly introduced method of facilitating asynchronous discussions among remote healthcare professionals, has enabled the generation of such ground truth, i.e. medical diagnoses,  with high quality at scale, and consequently, the development of machine learning based medical applications. 
+                    <br><br>
+                    In this talk, I will present the challenges of managing labellers, who often are medical experts, involved in asynchronously adjudicating medical labels. The discussion will focus on what information labellers find important to doing their jobs efficiently, and how such information impacts their work’s speed and quality. I next propose improvements to the current asynchronous adjudication mechanism. Last, I will describe a novel patented async adjudication expansion, designed and built to address the challenges of resolving disagreements among experts on visual annotations of medical images.
+                </p>
+                <hr class="primary">
+                <h3 class="text-center">Bio</h3><br>
+                <p>
+                    I received my Ph.D.in Computer Science and Engineering from the University of Michigan, Artificial Intelligence Lab. From 2014 to 2018, I led and managed a data quality team of engineers and data scientists at Google Maps, responsible for building machine learning time-series models that detect and predict visit patterns useful in assisting users to plan their trips efficiently. We built innovative location-based systems for crowdsourcing users’ assessment about their physical surroundings in real time.  Since 2018, I have been leading a team tasked with developing a crowd-sourcing platform for medical labeling and diagnoses in Health, a new healthcare division at Google. The platform's output of high quality labeled data, generated securely and reliably at scale, is imperative to Google Health's efforts in building and deploying state-of-the-art machine-learning-powered diagnostic solutions, including ML models for diabetic retinopathy and breast cancer detection.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div id="andrea-olgiati" class="col-lg-5 col-lg-offset-1" style="padding-right: 40px">
+                <img src="img/keynotes/andrea_olgiati.jpg" class="img-responsive" style="border-radius: 100%; width: 100%; height: auto; margin: 0 auto" alt="">
+                <br>
+                <h2 class="section-heading text-center"><a href="https://www.linkedin.com/in/andreaolgiati/" target="_blank">Andrea Olgiati (Amazon AI)</a></h2>
+                <hr class="primary">
+                <h3 class="text-center">Data =? Software</h3><br>
+                <p>
+                    Managing large amounts of data in a rigorous way is key to the success of ML initiatives. Yet, we still find that many organizations often do not have a complete view of their data, leading to sub-optimal and biased solutions. What can we learn from the world of software development to build a better-controlled system? How can the creation of controlled datasets become less of an art and more of a science?
+                </p>
+                <hr class="primary">
+                <h3 class="text-center">Bio</h3><br>
+                <p>
+                    Andrea is a Senior Principal Engineer at AWS, where he is the technical leader for the AWS SageMaker managed ML platform. In the past he has worked on computer vision, databases and chip design. He holds a Laurea degree from Politecnico di Milano in Italy.
+                </p>
+            </div>
+            <div id="peter-hallinan" class="col-lg-5" style="padding-left: 40px">
+                <img src="img/keynotes/peter_hallinan.jpg" class="img-responsive" style="border-radius: 100%; width: 100%; height: auto; margin: 0 auto" alt="">
+                <br>
+                <h2 class="section-heading text-center"><a href="https://www.linkedin.com/in/pwhallinan/" target="_blank">Peter Hallinan (AI & Data @ Amazon)</a></h2>
+                <hr class="primary">
+                <h3 class="text-center">Getting good data faster</h3><br>
+                <p>
+                    The AI industry is collectively fielding tens of thousands of ML applications, many of which require human-labeled data (HLD) for training, evaluation or production “patching”. We identify business and operational challenges to producing high-quality HLD at scale, and review the pros and cons of common organizational solutions: outsourcing HLD to third-party vendors, insourcing HLD to a product or engineering sub-team, insourcing HLD to a specialized HLD function, letting science contributors fend for themselves, and hybrids of these.
+                </p>
+                <hr class="primary">
+                <h3 class="text-center">Bio</h3><br>
+                <p>
+                    Peter W. Hallinan leads ML initiatives in human-labeled data at Amazon. Prior to Amazon, he was a partner at Blindsight (computer vision for the blind, sold to AMZN), and at Techcelerator, a venture development firm. Earlier, he was a vice president at Analysis Group / Integral, where he specialized in growth strategy and the management of innovation for Fortune 500 companies in high-tech, life science, and finance.  He holds A.B., S.M., and Ph.D. degrees from Harvard University, where he conducted research in pattern recognition and artificial intelligence, co-authored an early book on face recognition, and moonlighted as a teaching fellow in policy analysis and experimental design at the John F. Kennedy School of Government. His volunteer activities have included serving as a consulting professor at the Stanford School of Medicine, and leading the American Chamber of Commerce in Madagascar.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-primary">
+    <div class="container">
+        <div class="row">
+            <div id="ben-hutchinson" class="col-lg-5 col-lg-offset-1" style="padding-right: 40px">
+                <img src="img/keynotes/ben_hutchinson.jpg" class="img-responsive" style="border-radius: 100%; width: 100%; height: auto; margin: 0 auto" alt="">
+                <br>
+                <h2 class="section-heading text-center"><a href="https://www.linkedin.com/in/ben-hutchinson-ab56464/" target="_blank" style="color: white">Ben Hutchingson (Google Research)</a></h2>
+                <hr class="light">
+                <h3 class="text-center">Towards Accountability for Machine Learning Datasets: Lessons from Software Engineering</h3><br>
+                <p>
+                    Rising concern for the societal implications of artificial intelligence systems has inspired demands for greater transparency and accountability. However the datasets which empower machine learning are often used, shared and re-used with little visibility into the processes of deliberation which led to their creation. In this talk, I introduce a rigorous framework for dataset development transparency which supports decision-making and accountability. The framework uses the cyclical, infrastructural and engineering nature of dataset development to draw on best practices from the software development lifecycle. Each stage of the data development lifecycle yields a set of documents that facilitate improved communication and decision-making, as well as drawing attention to the value and necessity of careful data work. The proposed framework is intended to contribute to closing the accountability gap in artificial intelligence systems, by making visible the often overlooked work that goes into dataset creation.
+                </p>
+                <hr class="primary">
+                <h3 class="text-center">Bio</h3><br>
+                <p>
+                    Ben Hutchinson is a Senior Engineer in Google Research, working on artificial intelligence, dataset development practices, data ethics, fairness, and accountability. His research focuses on incorporating knowledge and practices from a variety of engineering and social science disciplines in order to inform the ethical development of AI. Prior to joining Google Research, he spent ten years writing code for a variety of products such as Google Maps, Knowledge Graph, and Google Search. He uses this engineering experience to help bridge the gaps between research and engineering, and between theory and practice.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Contact</h2>
+                <hr class="primary">
+            </div>
+        </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <a href="mailto:data-excellence@googlegroups.com">
+                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>data-excellence@googlegroups.com</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/wow.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/creative.js"></script>
+
+</body>
+
+</html>
