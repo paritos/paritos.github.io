@@ -220,16 +220,28 @@
                     <p class="text-faded"><span style="color: white; font-weight: bold">New Datasets</span>:  in areas that align with MLCommons:
                     <ul class="text-faded">
                       <li>Speech, medical, recommendation/personalization</li>
-                      <li>Science: <a href="https://www.mgi.gov/" target="_blank" https://www.mgi.gov/</a></li><ul>      
-                          <li>There is no good software that is abandoned.</li> 
-                          <li>Even a one-off dataset requires maintenance over time, extension to other languages, addition of new word pairs, updates, scrutiny.</li>
-                          <li>How do we help other people to contribute to growing and improving this data</li>
-                        </ul>      
-                      <li>Open infrastructure for supporting maintenance and growth</li>
+                      <li>Science: <a href="https://www.mgi.gov/" target="_blank">https://www.mgi.gov/</a></li><ul>      
+                   
+                   <p class="text-faded"><span style="color: white; font-weight: bold">Tools & methodologies </span>for accelerating open-source dataset development:
+		<ul class="text-faded">
+                      <li>Tools that quantify and accelerate time to source and prepare high quality data</li>
+			<li>Tools that ensure that the data is labeled consistently, such as label consensus</li>
+			    <li>Tools that make improving data quality more systematic</li>
+<li>Tools that automate the creation of high quality supervised learning training data from low quality resources, such as forced alignment in speech recognition</li>
+<li>Tools that produce consistent and low noise data samples, or remove labeling noise or inconsistencies from existing data</li>
+<li>Tools for controlling what goes into the dataset and for making high level edits efficiently to very large datasets, e.g. adding new words, languages, or accents to speech datasets with thousands of hours</li>
+	    <li>Search methods for finding suitably licensed datasets based on public resources </li>
+<li>Tools for creating training datasets for small data problems, or for rare classes in the long tail of big data problems </li>
+<li>Tools for timely incorporation of feedback from production systems into datasets</li>
+<li>Tools for understanding dataset coverage of important classes, and editing them to cover newly identified important cases</li>
+<li>Dataset importers that allow easy combination and composition of existing datasets</li>
+<li>Dataset exporters that make the data consumable for models and interface with model training and inference systems such as webdataset.</li>
+<li>System architectures and interfaces that enable composition of dataset tools such as, MLCube, Docker, Airflow</li>
+
                     </ul>
                     </p>
 
-                    <p class="text-faded"><span style="color: white; font-weight: bold">Reliability:</span> Reliability captures internal aspects of validity of the data, such as: consistency, replicability, reproducibility of data. Irreproducible data allows us to draw whatever conclusions we want to draw, while giving us the facade of being data-driven, when it is dangerously hunch driven:
+                    <p class="text-faded"><span style="color: white; font-weight: bold">Algorithms</span> for working with limited labeled data and improving label efficiency:
                     <ul class="text-faded">
                       <li>Irreproducible data is not maintainable</li>
                       <li>Reliable mechanisms to account for the human aspects of data collection</li>
